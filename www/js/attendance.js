@@ -98,51 +98,51 @@ function closePopup() {
   overlay.style.display = 'none';
 }
 
-// function addAcompanante() {
-//   // Obtén el contenedor en el que agregarás la nueva línea
-//   var popupContent = document.getElementById('accompaniments-list');
+function addAcompanante() {
+  // Obtén el contenedor en el que agregarás la nueva línea
+  var popupContent = document.getElementById('accompaniments-list');
 
-//   // Crea un nuevo elemento de párrafo (p)
-//   var nuevoParrafo = document.createElement('p');
+  // Crea un nuevo elemento de párrafo (p)
+  var nuevoParrafo = document.createElement('p');
 
-//   //Generar único id por fila de acompañante
-//   var uniqueId = generateUniqueId();
+  //Generar único id por fila de acompañante
+  var uniqueId = generateUniqueId();
 
-//   // Añade campos para nombre, tipo y alergias
-//   nuevoParrafo.innerHTML = `
-//         <div class="acompanante">
-//           <input type="text" placeholder="Nombre del Acompañante" class="name">
-//           <select class="type" name="tipo_acompanante[]">
-//             <option value="adulto">Adulto</option>
-//             <option value="nino">Niño</option>
-//           </select>
-//           <input type="text" placeholder="Alergias" class="allergies">
-//           <button id="deleteAcompananteButton">Borrar Acompañante</button>
-//         </div>
-//         `;
+  // Añade campos para nombre, tipo y alergias
+  nuevoParrafo.innerHTML = `
+        <div class="acompanante">
+          <input type="text" placeholder="Nombre del Acompañante" class="name">
+          <select class="type" name="tipo_acompanante[]">
+            <option value="adulto">Adulto</option>
+            <option value="nino">Niño</option>
+          </select>
+          <input type="text" placeholder="Alergias" class="allergies">
+          <button id="deleteAcompananteButton">Borrar Acompañante</button>
+        </div>
+        `;
 
-//   // Agrega el nuevo párrafo al contenido del pop-up
-//   popupContent.appendChild(nuevoParrafo);
+  // Agrega el nuevo párrafo al contenido del pop-up
+  popupContent.appendChild(nuevoParrafo);
 
-//   // Eliminar acompañantes
-//   var rmButton = nuevoParrafo.querySelector('#deleteAcompananteButton');
-//   if (rmButton) {
-//     rmButton.addEventListener("click", function() {
-//       deleteAcompanante(nuevoParrafo);
-//     });
-//   }
-// }
+  // Eliminar acompañantes
+  var rmButton = nuevoParrafo.querySelector('#deleteAcompananteButton');
+  if (rmButton) {
+    rmButton.addEventListener("click", function() {
+      deleteAcompanante(nuevoParrafo);
+    });
+  }
+}
 
-// function deleteAcompanante(btn) {
-//   // Obtén el elemento padre (la línea de acompañante) del botón que fue clicado
-//   var acompananteContainer = btn;
+function deleteAcompanante(btn) {
+  // Obtén el elemento padre (la línea de acompañante) del botón que fue clicado
+  var acompananteContainer = btn;
 
-//   // Verifica si hay al menos una línea de acompañante para eliminar
-//   if (acompananteContainer) {
-//     // Elimina la línea de acompañante específica
-//     acompananteContainer.parentNode.removeChild(acompananteContainer);
-//   }
-// }
+  // Verifica si hay al menos una línea de acompañante para eliminar
+  if (acompananteContainer) {
+    // Elimina la línea de acompañante específica
+    acompananteContainer.parentNode.removeChild(acompananteContainer);
+  }
+}
 
 
 // Función para guardar en firestore los datos
