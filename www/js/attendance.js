@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // var checkboxSi = document.getElementById("acompanadoSi");
   var busNo = document.getElementById("busNo");
   var busSi = document.getElementById("busSi");
-  var adulto = document.getElementById("adulto");
-  var nino = document.getElementById("nino");
+  var cancion = document.getElementById("cancion");
 
 
   // checkboxSi.addEventListener("change", habilitarCampoAcompanante);
@@ -164,6 +163,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   // }
 
   var bus = document.getElementById("busSi").checked;
+  var song = document.getElementById("cancion").checked;
   
   // Crear un array para almacenar los acompañantes
   // var acompanantes = [];
@@ -199,7 +199,8 @@ document.getElementById('attendance-form').addEventListener("submit", function (
     Alergias: allergies,
     // Type: type,
     // Acompañantes: acompanantes,
-    Bus: bus
+    Bus: bus,
+    Cancion: song
   })
     .then(function (docRef) {
       console.log("Documento agregado con ID: ", docRef.id);
@@ -214,7 +215,8 @@ document.getElementById('attendance-form').addEventListener("submit", function (
         ale: allergies,
         // type: type,
         // gue: acompanantes,
-        bus: bus
+        bus: bus,
+        song: song
       };
       enviarEmail(emailData);
 
@@ -231,6 +233,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   // document.getElementById("acompanadoNo").checked = "";
   document.getElementById("busSi").checked = "";
   document.getElementById("busNo").checked = "";
+  document.getElementById("cancion").checked = "";
   // document.getElementById("adulto").checked = "";
   // document.getElementById("nino").checked = "";
 
