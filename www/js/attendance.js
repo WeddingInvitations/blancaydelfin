@@ -8,34 +8,34 @@ const inputFields = document.querySelectorAll(".form-group input"); // Obtén to
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", function () {
   // Seleccionar los elementos después de que el DOM esté cargado
-  // var checkboxNo = document.getElementById("acompanadoNo");
-  // var checkboxSi = document.getElementById("acompanadoSi");
+  var checkboxNo = document.getElementById("acompanadoNo");
+  var checkboxSi = document.getElementById("acompanadoSi");
   var busNo = document.getElementById("busNo");
   var busSi = document.getElementById("busSi");
   var cancion = document.getElementById("cancion");
 
 
-  // checkboxSi.addEventListener("change", habilitarCampoAcompanante);
-  // checkboxNo.addEventListener("change", habilitarCampoAcompanante);
+  checkboxSi.addEventListener("change", habilitarCampoAcompanante);
+  checkboxNo.addEventListener("change", habilitarCampoAcompanante);
   busSi.addEventListener("change", habilitarBus);
   busNo.addEventListener("change", habilitarBus);
   // adulto.addEventListener("change", habilitarTipo);
   // nino.addEventListener("change", habilitarTipo);
   
   // Función para habilitar el check acom y abrir pop up
-  // function habilitarCampoAcompanante(event) {
-  //   // Desmarcar el otro checkbox
-  //   if (checkboxNo.checked && event.target === checkboxSi) {
-  //     checkboxNo.checked = false;
-  //   } else if (checkboxSi.checked && event.target === checkboxNo) {
-  //     checkboxSi.checked = false;
-  //   }
+  function habilitarCampoAcompanante(event) {
+    // Desmarcar el otro checkbox
+    if (checkboxNo.checked && event.target === checkboxSi) {
+      checkboxNo.checked = false;
+    } else if (checkboxSi.checked && event.target === checkboxNo) {
+      checkboxSi.checked = false;
+    }
 
-  //   // Limpiar el campo si 'acompanado' es falso
-  //   if (checkboxSi.checked && event.target === checkboxSi) {
-  //     openPopup();
-  //   }
-  // }
+    // Limpiar el campo si 'acompanado' es falso
+    if (checkboxSi.checked && event.target === checkboxSi) {
+      openPopup();
+    }
+  }
 
   function habilitarBus(event) {
     // Desmarcar el otro checkbox
@@ -78,10 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   //Función para añadir acompañantes
-  // var addButton = document.getElementById('addAcompananteButton');
-  // if (addButton) {
-  //   addButton.addEventListener("click", addAcompanante);
-  // }
+  var addButton = document.getElementById('addAcompananteButton');
+  if (addButton) {
+    addButton.addEventListener("click", addAcompanante);
+  }
 });
 
 
@@ -153,7 +153,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   var name = document.getElementById("nombre").value;
   var phone = document.getElementById("telefono").value;
   var allergies = document.getElementById("alergias").value;
-  // var attendance = document.getElementById("acompanadoSi").checked;
+  var attendance = document.getElementById("acompanadoSi").checked;
   // var type = document.getElementById("adulto").checked;
 
   // if (type) {
@@ -166,28 +166,28 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   var song = document.getElementById("cancion").checked;
   
   // Crear un array para almacenar los acompañantes
-  // var acompanantes = [];
+  var acompanantes = [];
 
   // Si el checkbox de acompañado está marcado, agregar el acompañante al array
-  // if (attendance) {
+  if (attendance) {
 
-  //   var acompananteElements = document.getElementsByClassName("acompanante");
+    var acompananteElements = document.getElementsByClassName("acompanante");
 
-  //   for (var i = 0; i < acompananteElements.length; i++) {
-  //     var acompananteElement = acompananteElements[i];
-  //     // Obtener los valores de los campos del acompañante actual
-  //     var acompanante = {
-  //       Nombre: acompananteElement.querySelector(".name").value,
-  //       TipoInvitado: acompananteElement.querySelector(".type").value,
-  //       Alergias: acompananteElement.querySelector(".allergies").value
-  //     };
+    for (var i = 0; i < acompananteElements.length; i++) {
+      var acompananteElement = acompananteElements[i];
+      // Obtener los valores de los campos del acompañante actual
+      var acompanante = {
+        Nombre: acompananteElement.querySelector(".name").value,
+        TipoInvitado: acompananteElement.querySelector(".type").value,
+        Alergias: acompananteElement.querySelector(".allergies").value
+      };
 
-  //     // acompanantes.push(acompanante);
-  //     acompanantes.push(Object.assign({}, acompanante));
+      // acompanantes.push(acompanante);
+      acompanantes.push(Object.assign({}, acompanante));
 
-    // }
+    }
 
-  // }
+  }
 
   // Dentro de la colección principal, obtén una referencia a la subcolección "attendance"
   const docRef = collection(db, "attendance");
@@ -195,10 +195,10 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   addDoc(docRef, {
     Nombre: name,
     Teléfono: phone,
-    // Asistencia: attendance,
+    Asistencia: attendance,
     Alergias: allergies,
     // Type: type,
-    // Acompañantes: acompanantes,
+    Acompañantes: acompanantes,
     Bus: bus,
     Cancion: song
   })
@@ -211,10 +211,10 @@ document.getElementById('attendance-form').addEventListener("submit", function (
       const emailData = {
         nm: name,
         ph: phone,
-        // att: attendance,
+        att: attendance,
         ale: allergies,
         // type: type,
-        // gue: acompanantes,
+        gue: acompanantes,
         bus: bus,
         song: song
       };
@@ -229,8 +229,8 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   document.getElementById("nombre").value = "";
   document.getElementById("telefono").value = "";
   document.getElementById("alergias").value = "";
-  // document.getElementById("acompanadoSi").checked = "";
-  // document.getElementById("acompanadoNo").checked = "";
+  document.getElementById("acompanadoSi").checked = "";
+  document.getElementById("acompanadoNo").checked = "";
   document.getElementById("busSi").checked = "";
   document.getElementById("busNo").checked = "";
   document.getElementById("cancion").checked = "";
