@@ -174,7 +174,7 @@ video {
 
 
 .cuenta-regresiva {
-    background-image: url('images/aurora.jpg');
+    /* background-image: url('images/aurora.jpg'); */
     background-size: contain;
     display: flex;
     justify-content: center;
