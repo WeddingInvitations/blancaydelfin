@@ -1,0 +1,917 @@
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    font-size: 0.8em;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Estilos para el texto */
+body.custom-body {
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+    font-size: 17px;
+}
+
+
+/* PORTADA */
+
+/* header {
+    background-size: contain;
+    background-image: url('images/video-header.mp4');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-size: contain;
+        background-image: url('images/video-header.mp4');
+        height: 300px;
+    }
+} */
+
+header {
+    position: inherit;
+    overflow: hidden;
+    height: 300px;
+}
+
+video {
+    position: absolute;
+    margin-left: 16%;
+    width: 67%;
+    height: 46%;
+    /* object-fit: contain; */
+    /* margin-top: 2%; */
+    max-width: 117%;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        position: inherit;
+        overflow: hidden;
+        /* height: -webkit-fill-available; */
+    }
+
+    video {
+        position: relative;
+        /* margin-left: 16%; */
+        width: 80%;
+        height: -webkit-fill-available;
+        object-fit: fill;
+        margin-top: 10%;
+        max-width: 70%;
+    }
+}
+
+#btn-lang {
+    background-color: black;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px 10px;
+    /* Espaciado interno */
+    font-size: 15px;
+    /* Tamaño del texto */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Animaciones suaves */
+    margin-left: 10px;
+}
+
+#btn-lang:hover {
+    background-color: black;
+    /* Color al pasar el cursor */
+    transform: scale(1.05);
+    /* Agranda un poco el botón */
+}
+
+#btn-lang:active {
+    background-color: black;
+    /* Color al hacer clic */
+    transform: scale(0.95);
+    /* Reduce un poco el tamaño */
+}
+
+
+
+/* SECTIONS */
+
+
+.flower-border-r {
+    position: relative;
+    /* Permite posicionar la imagen con precisión */
+    right: 50px;
+    /* Pegada al margen derecho */
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste bien a su contenedor */
+    z-index: -1;
+    /* Envía la imagen detrás del contenido principal */
+}
+
+.flower-border-l {
+    position: relative;
+    /* Permite posicionar la imagen con precisión */
+    right: 20px;
+    /* Pegada al margen derecho */
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste bien a su contenedor */
+    z-index: -1;
+    /* Envía la imagen detrás del contenido principal */
+}
+
+
+
+/* BIENVENIDOS */
+
+#bienvenidos {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#bienvenidos h1 {
+    color: black;
+    font-family: 'Quattrocento', serif;
+    font-style: normal;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.bienvenidos-texto p {
+    text-align: center;
+    padding: 20px;
+    padding: 10px;
+    /* Ajusta el relleno según sea necesario */
+}
+
+.bienvenidos-texto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.cuenta-regresiva {
+    background-image: url('images/aurora.jpg');
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    filter: opacity(0.8);
+    height: 30vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .cuenta-regresiva {
+        background-size: cover;
+    }
+}
+
+
+#cuenta-atras {
+    display: flex;
+    align-items: center;
+}
+
+.tiempo {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.barra {
+    font-size: 1em;
+    color: #666;
+    margin: 0 10px;
+}
+
+
+
+/* LOCATION */
+
+#general-information {
+    text-align: center;
+    padding: 20px;
+}
+
+#general-information h1 {
+    color: black;
+    font-family: 'Quattrocento', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+/* .information-texto p {
+    text-align: center;
+    padding: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    color: white;
+} */
+
+.finca-image-container {
+    position: relative;
+    width: 70%;
+    max-width: 500px;
+    margin: 0 auto;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+
+.finca-image-container img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.finca-image-container .information-texto {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Quattrocento', serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 600px) {
+    .finca-image-container {
+        width: 90%;
+    }
+
+    .finca-image-container .information-texto {
+        font-size: 16px;
+    }
+}
+
+
+/* Google Maps */
+#mapDiv {
+    height: 300px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+/* ITINERARIO */
+
+.timeline {
+    position: relative;
+    margin: 50px 0;
+    padding-left: 40px;
+    border-left: 3px solid black;
+    margin-left: 660px;
+}
+
+@media only screen and (max-width: 600px) {
+    .timeline {
+        position: relative;
+        margin: 50px 0;
+        padding-left: 40px;
+        border-left: 3px solid black;
+    }
+}
+
+.event {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-out;
+}
+
+.event:before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    background-color: #868686;
+    border-radius: 50%;
+}
+
+.event .time {
+    width: 100px;
+}
+
+.event .icon {
+    margin-right: 20px;
+}
+
+.event .icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.event .description {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.event .hidden {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.event .description:hover {
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+/* Animation logic */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.itinerario img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.element-crew {
+    max-width: 3%;
+}
+
+.element {
+    max-width: 4%;
+}
+
+@media only screen and (max-width: 600px) {
+    .timeline {
+        position: relative;
+        margin: 50px 0;
+        padding-left: 40px;
+        border-left: 3px solid black;
+    }
+}
+
+/* CONTACTO */
+.rrss {
+    width: 30px;
+    /* Ancho del icono */
+    height: auto;
+    /* Altura del icono */
+    margin-bottom: 5px;
+}
+
+.contacto p {
+    margin: 0;
+    /* Elimina el margen predeterminado del párrafo */
+    text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+    .contacto {
+        padding: 15px;
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
+
+.contacto-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contacto-info a {
+    display: inline-block;
+    background-color: #1e1e1e;
+    /* Color característico de WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-info a:hover {
+    background-color: #457556;
+    /* Más oscuro al pasar el ratón */
+}
+
+
+/* INFORMACIÓN DE INTERÉS */
+
+#info_interes {
+    background-image: url('images/flowers.avif');
+    background-size: contain;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    filter: opacity(0.8);
+}
+
+@media only screen and (max-width: 600px) {
+    #info_interes {
+        background-size: auto;
+    }
+}
+
+#info_interes h1 {
+    color: white;
+    font-family: 'Quattrocento', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+#info_interes h4 {
+    color: white;
+}
+
+#info_interes p {
+    text-align: center;
+    padding: 20px;
+    padding: 10px;
+    color: white;
+}
+
+
+.slider {
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav {
+    background-color: #00000000;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.nav.prev {
+    left: 10px;
+}
+
+.nav.next {
+    right: 10px;
+}
+
+.nav:focus {
+    outline: none;
+}
+
+
+
+
+/* ASISTENCIA */
+
+#asistencia {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+}
+
+#asistencia h1 {
+    font-family: 'Quattrocento', serif;
+    font-size: 35px;
+    color: black;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+#asistencia p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+/* Formulario */
+.form-container-asist {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+input::placeholder {
+    color: #888888;
+}
+
+/* Radio buttons */
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+label[for="acompanadoNo"],
+label[for="acompanadoSi"] {
+    font-size: 14px;
+    color: #555555;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    z-index: 1000;
+    width: max-content;
+}
+
+@media only screen and (max-width: 600px) {
+    #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: white;
+        z-index: 1000;
+        width: 350px;
+    }
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 20px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 20px;
+    /* Ajusta el tamaño según sea necesario */
+}
+
+.modal {
+    display: none;
+    /* Inicialmente oculto */
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro semitransparente */
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* .add-button,
+.save-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-button:hover,
+.save-button:hover {
+    background-color: black;
+} */
+
+
+/* Botón de enviar: Estilo Business */
+button#submit {
+    background-color: black;
+    /* Azul corporativo */
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 50px;
+    /* Bordes redondeados y modernos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button#submit:hover {
+    background-color: black;
+    /* Azul más oscuro para hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Intensifica la sombra */
+    transform: translateY(-2px);
+    /* Ligero levantamiento al hacer hover */
+}
+
+button#submit:active {
+    background-color: #0e3d80;
+    /* Azul aún más oscuro al hacer clic */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    /* Reduce la sombra */
+    transform: translateY(0);
+    /* Elimina el levantamiento */
+}
+
+/* Responsivo */
+@media only screen and (max-width: 600px) {
+    .form-container-asist {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    #asistencia h1 {
+        font-size: 30px;
+    }
+
+    #asistencia p {
+        font-size: 16px;
+    }
+}
+
+/* CARROUSEL */
+
+#carrousel {
+    text-align: center;
+    padding: 20px;
+}
+
+#carrousel h1 {
+    font-family: 'Quattrocento', serif;
+    font-size: 35px;
+    color: black;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.carrousel-texto p {
+    text-align: center;
+    padding: 20px;
+    padding: 10px;
+    /* Ajusta el relleno según sea necesario */
+}
+
+
+
+.carousel-item img {
+    height: auto;
+    /* Ajusta la altura de las imágenes */
+    max-width: 40%;
+    object-fit: cover;
+    /* Asegúrate de que las imágenes se escalen correctamente */
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para el texto */
+    right: 33% !important;
+    bottom: 20px;
+    left: 33% !important;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.carrousel-texto img {
+    position: absolute;
+    max-width: 7%;
+    margin-top: -4%;
+    margin-left: -22%;
+    transform: rotate(-30deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-item img {
+        height: 450px;
+        /* Ajusta la altura de las imágenes */
+        max-width: 100%;
+    }
+
+    .carousel-caption {
+        right: 7% !important;
+        left: 7% !important;
+    }
+
+    .carrousel-texto img {
+        position: absolute;
+        max-width: 15%;
+        margin-top: -20%;
+        margin-left: -43%;
+        transform: rotate(-10deg);
+    }
+}
+
+
+
+/* MÚSICA */
+
+#musica {
+    text-align: center;
+    padding: 20px;
+}
+
+#musica h1 {
+    color: black;
+    font-family: 'Quattrocento', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.musica-texto p {
+    text-align: center;
+    padding: 20px;
+    padding: 10px;
+}
+
+/* REGALOS */
+
+#regalos {
+    text-align: center;
+    padding: 20px;
+}
+
+#regalos h1 {
+    color: black;
+    font-family: 'Quattrocento', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.regalos-texto p {
+    text-align: center;
+    padding: 20px;
+    padding: 10px;
+}
+
+.plain-text {
+    color: black;
+    background: none;
+    font-family: 'Quattrocento', serif;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/* FOOTER */
+.pre-footer {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .pre-footer {
+        max-width: 100%;
+    }
+}
+
+footer {
+    background-color: #4a4949;
+    padding: 10px;
+    color: white;
+}
+
+.footer-content p {
+    text-align: center;
+    font-weight: 200;
+}
