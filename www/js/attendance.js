@@ -163,7 +163,8 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   // }
 
   var bus = document.getElementById("busSi").checked;
-  var song = document.getElementById("cancion").checked;
+  var song = document.getElementById("cancion").value;
+  var size = document.getElementById("talla").value;
   
   // Crear un array para almacenar los acompañantes
   var acompanantes = [];
@@ -200,7 +201,8 @@ document.getElementById('attendance-form').addEventListener("submit", function (
     // Type: type,
     Acompañantes: acompanantes,
     Bus: bus,
-    Cancion: song
+    Cancion: song,
+    Size: size
   })
     .then(function (docRef) {
       console.log("Documento agregado con ID: ", docRef.id);
@@ -216,7 +218,8 @@ document.getElementById('attendance-form').addEventListener("submit", function (
         // type: type,
         gue: acompanantes,
         bus: bus,
-        song: song
+        song: song,
+        size:size
       };
       enviarEmail(emailData);
 
@@ -233,7 +236,8 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   document.getElementById("acompanadoNo").checked = "";
   document.getElementById("busSi").checked = "";
   document.getElementById("busNo").checked = "";
-  document.getElementById("cancion").checked = "";
+  document.getElementById("cancion").value = "";
+  document.getElementById("talla").value = "";
   // document.getElementById("adulto").checked = "";
   // document.getElementById("nino").checked = "";
 
