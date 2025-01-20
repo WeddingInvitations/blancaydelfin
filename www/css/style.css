@@ -92,8 +92,10 @@ header {
 
 .information-texto p {
     text-align: center;
-    margin: 10px 30px 10px 30px;
+    margin-left: 20px;
+    margin-top: 10px;
     color: #b3bbad;
+    font-size: 15px;
 }
 
 #general-information .elements {
@@ -101,16 +103,16 @@ header {
 }
 
 .location-container {
-    display: flex; /* Flexbox para alinear elementos en línea */
-    align-items: center; /* Centra verticalmente la imagen y el texto */
-    gap: 20px; /* Espaciado entre la imagen y el texto */
-    margin: 20px 0; /* Espaciado superior e inferior */
+    display: flex;
+    /* Flexbox para alinear elementos en línea */
+    align-items: center;
 }
 
 #general-information .location {
-    width: 50%;
+    width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin-left: 30px;
 }
 
 
