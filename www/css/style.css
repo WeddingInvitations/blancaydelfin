@@ -97,7 +97,14 @@ header {
 }
 
 #general-information .elements {
-    width: 70%;
+    width: 80%;
+}
+
+.location-container {
+    display: flex; /* Flexbox para alinear elementos en línea */
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+    margin: 20px 0; /* Espaciado superior e inferior */
 }
 
 #general-information .location {
