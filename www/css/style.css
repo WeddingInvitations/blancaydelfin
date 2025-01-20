@@ -27,119 +27,17 @@ body.custom-body {
     flex-direction: column;
     min-height: 100vh;
     font-size: 17px;
-    background-size: cover;
+    background-size: contain;
 }
 
 
 /* PORTADA */
 
-/* header {
-    background-size: contain;
-    background-image: url('images/video-header.mp4');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 500px;
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        background-size: contain;
-        background-image: url('images/video-header.mp4');
-        height: 300px;
-    }
-} */
 
 header {
     position: inherit;
     overflow: hidden;
     height: 300px;
-}
-
-video {
-    position: absolute;
-    margin-left: 16%;
-    width: 67%;
-    height: 46%;
-    /* object-fit: contain; */
-    /* margin-top: 2%; */
-    max-width: 117%;
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        position: inherit;
-        overflow: hidden;
-        /* height: -webkit-fill-available; */
-    }
-
-    video {
-        position: relative;
-        /* margin-left: 16%; */
-        width: 80%;
-        height: -webkit-fill-available;
-        object-fit: fill;
-        margin-top: 10%;
-        max-width: 70%;
-    }
-}
-
-#btn-lang {
-    background-color: black;
-    /* Color de fondo */
-    color: white;
-    /* Color del texto */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    padding: 10px 10px;
-    /* Espaciado interno */
-    font-size: 15px;
-    /* Tamaño del texto */
-    cursor: pointer;
-    /* Cambia el cursor al pasar por encima */
-    transition: background-color 0.3s, transform 0.2s;
-    /* Animaciones suaves */
-    margin-left: 10px;
-}
-
-#btn-lang:hover {
-    background-color: black;
-    /* Color al pasar el cursor */
-    transform: scale(1.05);
-    /* Agranda un poco el botón */
-}
-
-#btn-lang:active {
-    background-color: black;
-    /* Color al hacer clic */
-    transform: scale(0.95);
-    /* Reduce un poco el tamaño */
-}
-
-
-
-/* SECTIONS */
-
-
-.flower-border-r {
-    position: relative;
-    /* Permite posicionar la imagen con precisión */
-    right: 50px;
-    /* Pegada al margen derecho */
-    object-fit: cover;
-    /* Asegura que la imagen se ajuste bien a su contenedor */
-    z-index: -1;
-    /* Envía la imagen detrás del contenido principal */
-}
-
-.flower-border-l {
-    position: relative;
-    /* Permite posicionar la imagen con precisión */
-    right: 20px;
-    /* Pegada al margen derecho */
-    object-fit: cover;
-    /* Asegura que la imagen se ajuste bien a su contenedor */
-    z-index: -1;
-    /* Envía la imagen detrás del contenido principal */
 }
 
 
@@ -153,7 +51,8 @@ video {
 
 #bienvenidos h1 {
     color: black;
-    font-family: 'Quattrocento', serif;
+    font-family: "Schoolbell", serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 35px;
     letter-spacing: 2px;
