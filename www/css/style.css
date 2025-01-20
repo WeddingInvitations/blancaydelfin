@@ -49,7 +49,7 @@ header {
     margin-top: 30px;
 }
 
-#bienvenidos h2 {
+#bienvenidos h1 {
     color: #bdc767;
     font-family: "The Girl Next Door", serif;
     font-weight: 400;
@@ -80,7 +80,7 @@ header {
     padding: 20px;
 }
 
-#general-information h2 {
+#general-information h1 {
     color: #bdc767;
     font-family: "The Girl Next Door", serif;
     font-weight: 400;
@@ -112,7 +112,7 @@ header {
     padding: 40px 20px;
 }
 
-#asistencia h2 {
+#asistencia h1 {
     color: #bdc767;
     font-family: "The Girl Next Door", serif;
     font-weight: 400;
@@ -345,104 +345,7 @@ button#submit:active {
     }
 }
 
-/* CARROUSEL */
 
-#carrousel {
-    text-align: center;
-    padding: 20px;
-}
-
-#carrousel h1 {
-    font-family: 'Quattrocento', serif;
-    font-size: 35px;
-    color: black;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-.carrousel-texto p {
-    text-align: center;
-    padding: 20px;
-    padding: 10px;
-    /* Ajusta el relleno según sea necesario */
-}
-
-
-
-.carousel-item img {
-    height: auto;
-    /* Ajusta la altura de las imágenes */
-    max-width: 40%;
-    object-fit: cover;
-    /* Asegúrate de que las imágenes se escalen correctamente */
-    margin: 0 auto;
-}
-
-.carousel-caption {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente para el texto */
-    right: 33% !important;
-    bottom: 20px;
-    left: 33% !important;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-}
-
-
-.carrousel-texto img {
-    position: absolute;
-    max-width: 7%;
-    margin-top: -4%;
-    margin-left: -22%;
-    transform: rotate(-30deg);
-}
-
-@media only screen and (max-width: 600px) {
-    .carousel-item img {
-        height: 450px;
-        /* Ajusta la altura de las imágenes */
-        max-width: 100%;
-    }
-
-    .carousel-caption {
-        right: 7% !important;
-        left: 7% !important;
-    }
-
-    .carrousel-texto img {
-        position: absolute;
-        max-width: 15%;
-        margin-top: -20%;
-        margin-left: -43%;
-        transform: rotate(-10deg);
-    }
-}
-
-
-
-/* MÚSICA */
-
-#musica {
-    text-align: center;
-    padding: 20px;
-}
-
-#musica h1 {
-    color: black;
-    font-family: 'Quattrocento', serif;
-    font-size: 35px;
-    letter-spacing: 2px;
-}
-
-.musica-texto p {
-    text-align: center;
-    padding: 20px;
-    padding: 10px;
-}
 
 /* REGALOS */
 
@@ -452,10 +355,13 @@ button#submit:active {
 }
 
 #regalos h1 {
-    color: black;
-    font-family: 'Quattrocento', serif;
-    font-size: 35px;
+    color: #bdc767;
+    font-family: "The Girl Next Door", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
     letter-spacing: 2px;
+    margin: 30px 30px 10px 30px;
 }
 
 .regalos-texto p {
