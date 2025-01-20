@@ -61,8 +61,8 @@ header {
 
 .bienvenidos-texto p {
     text-align: center;
-    padding: 50px;
-    color: #fc8366;
+    margin: 10px 30px 10px 30px;
+    color: #b3bbad;
 }
 
 #bienvenidos img {
