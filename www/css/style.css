@@ -97,10 +97,10 @@ header {
 }
 
 #general-information .elements {
-    width: 50%;
+    width: 70%;
 }
 
-#general-information img {
+#general-information .location {
     width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
