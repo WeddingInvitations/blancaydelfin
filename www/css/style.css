@@ -61,52 +61,15 @@ header {
 
 .bienvenidos-texto p {
     text-align: center;
-    padding: 20px;
-    padding: 10px;
-    /* Ajusta el relleno según sea necesario */
+    padding: 50px;
+    color: #fc8366;
 }
 
-.bienvenidos-texto img {
-    max-width: 100%;
+#bienvenidos img {
+    max-width: 50%;
     height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
 }
 
-
-.cuenta-regresiva {
-    /* background-image: url('images/aurora.jpg'); */
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    filter: opacity(0.8);
-    height: 30vh;
-}
-
-@media only screen and (max-width: 600px) {
-    .cuenta-regresiva {
-        background-size: cover;
-    }
-}
-
-
-#cuenta-atras {
-    display: flex;
-    align-items: center;
-}
-
-.tiempo {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.barra {
-    font-size: 1em;
-    color: #666;
-    margin: 0 10px;
-}
 
 
 
