@@ -131,7 +131,7 @@ header {
     font-style: normal;
     font-size: 30px;
     letter-spacing: 2px;
-    margin: 35px 30px 10px 30px;
+    margin: 65px 30px 10px 30px;
 }
 
 #asistencia p {
@@ -149,7 +149,13 @@ header {
     }
 
     #asistencia h1 {
+        color: #bdc767;
+        font-family: "The Girl Next Door", serif;
+        font-weight: 400;
+        font-style: normal;
         font-size: 30px;
+        letter-spacing: 2px;
+        margin: 65px 30px 10px 30px;
     }
 
     #asistencia p {
