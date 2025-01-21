@@ -141,6 +141,23 @@ header {
     /* margin-bottom: 40px; */
 }
 
+/* Responsivo */
+@media only screen and (max-width: 600px) {
+    .form-container-asist {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    #asistencia h1 {
+        font-size: 30px;
+    }
+
+    #asistencia p {
+        font-size: 13px;
+        font-family: "Schoolbell", sans-serif;
+    }
+}
+
 /* Formulario */
 .form-container-asist {
     border-radius: 12px;
@@ -340,24 +357,6 @@ button#submit:active {
     transform: translateY(0);
     /* Elimina el levantamiento */
 }
-
-/* Responsivo */
-@media only screen and (max-width: 600px) {
-    .form-container-asist {
-        padding: 20px;
-        max-width: 90%;
-    }
-
-    #asistencia h1 {
-        font-size: 30px;
-    }
-
-    #asistencia p {
-        font-size: 13px;
-        font-family: "Schoolbell", sans-serif;
-    }
-}
-
 
 
 /* REGALOS */
