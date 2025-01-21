@@ -404,7 +404,7 @@ button#submit:active {
 
 @media only screen and (max-width: 600px) {
     .pre-footer {
-        max-width: 50%;
+        max-width: 40%;
     }
 }
 
