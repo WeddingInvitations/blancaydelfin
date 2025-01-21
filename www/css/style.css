@@ -379,13 +379,13 @@ button#submit:active {
     font-style: normal;
     font-size: 30px;
     letter-spacing: 2px;
-    margin: 30px 30px 10px 30px;
+    margin: 65spx 30px 10px 30px;
 }
 
 .regalos-texto p {
     text-align: center;
     padding: 20px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .plain-text {
