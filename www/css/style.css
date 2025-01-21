@@ -134,6 +134,11 @@ header {
     margin: 65px 30px 10px 30px;
 }
 
+#asistencia h2 {
+    color: #bdc767;
+}
+
+
 #asistencia p {
     text-align: center;
     margin: 10px 30px 10px 30px;
