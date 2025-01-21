@@ -196,7 +196,6 @@ input[type="tel"] {
     border: 1px solid #cccccc;
     border-radius: 8px;
     font-size: 0px;
-    color: #333333;
     transition: border-color 0.3s ease;
 }
 
@@ -332,10 +331,8 @@ label[for="acompanadoSi"] {
 
 /* Botón de enviar: Estilo Business */
 button#submit {
-    background-color: black;
     /* Azul corporativo */
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    color: #bdc767;
     font-size: 16px;
     font-weight: 500;
     padding: 12px 40px;
