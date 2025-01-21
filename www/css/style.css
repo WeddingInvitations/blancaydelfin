@@ -179,10 +179,9 @@ header {
 
 label {
     display: block;
-    font-size: 12px;
-    color: #333333;
+    font-size: 14px;
+    color: #a8353d;
     margin-bottom: 8px;
-    font-weight: 600;
 }
 
 input[type="text"],
