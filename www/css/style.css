@@ -201,7 +201,7 @@ input[type="tel"] {
 
 input[type="text"]:focus,
 input[type="tel"]:focus {
-    border-color: #0056b3;
+    border-color: #b3bbad;
     outline: none;
 }
 
@@ -355,7 +355,7 @@ button#submit:hover {
 }
 
 button#submit:active {
-    background-color: #0e3d80;
+    background-color: #b3bbad;
     /* Azul aún más oscuro al hacer clic */
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     /* Reduce la sombra */
