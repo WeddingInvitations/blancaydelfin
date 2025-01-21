@@ -383,18 +383,17 @@ button#submit:active {
 
 .regalos-texto p {
     text-align: center;
-    padding: 20px;
-    /* padding: 10px; */
+    margin: 10px 30px 10px 30px;
+    color: #b3bbad;
 }
 
 .plain-text {
-    color: black;
     background: none;
-    font-family: 'Quattrocento', serif;
     font-size: inherit;
     padding: 0;
     margin: 0;
 }
+
 
 /* FOOTER */
 .pre-footer {
@@ -409,7 +408,7 @@ button#submit:active {
 }
 
 footer {
-    background-color: #4a4949;
+    background-color: #dee4a8;
     padding: 10px;
     color: white;
 }
