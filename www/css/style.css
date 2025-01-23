@@ -103,7 +103,13 @@ header {
     width: 80%;
 }
 
-.location-container {
+.location-container-iglesia{
+    display: flex;
+    /* Flexbox para alinear elementos en línea */
+    align-items: center;
+}
+
+.location-container-finca{
     display: flex;
     /* Flexbox para alinear elementos en línea */
     align-items: center;
