@@ -156,7 +156,8 @@ header {
 }
 
 #asistencia img {
-    margin: 10px 30px 10px 30px;
+    margin: -83px -231px 10px 30px;
+    height: 80px;
 }
 
 /* Responsivo */
