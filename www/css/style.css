@@ -118,6 +118,11 @@ header {
     width: 134%;
 }
 
+.location-container-finca img {
+    margin: 10px 10px 10px 10px;
+    width: 60%;
+}
+
 #general-information .location {
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
