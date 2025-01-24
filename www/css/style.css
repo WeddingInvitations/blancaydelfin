@@ -119,7 +119,7 @@ header {
 }
 
 #general-information .wine {
-    margin: -71px 10px -133px -239px;
+    margin: -71px 8px -74px -239px;
     width: 16%;
     rotate: 10deg;
 }
@@ -152,6 +152,7 @@ header {
 
 #asistencia h2 {
     color: #bdc767;
+    margin-top: 32px;
 }
 
 
@@ -167,7 +168,7 @@ header {
 }
 
 #asistencia .olivo {
-    margin: -650px 10px -133px -239px;
+    margin: -563px 10px -48px -239px;
     width: 16%;
     rotate: 10deg;
 }
@@ -415,11 +416,12 @@ button#submit:active {
     color: #b3bbad;
 }
 
- /* {
-    margin: 150px 10px -133px -239px;
-    width: 16%;
-    rotate: 10deg;
-} */
+img.maletin {
+    vertical-align: middle;
+    border-style: none;
+    width: 110px;
+    margin: -45px 104px 56px 154px;
+}
 
 .plain-text {
     background: none;
