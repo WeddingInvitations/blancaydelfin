@@ -105,16 +105,16 @@ header {
 
 .location-container-iglesia{
     display: flex;
-    /* Flexbox para alinear elementos en línea */
     align-items: center;
-    margin-left: 12px;
+    margin-left: 5%;
+    margin-top: -10%;
 }
 
 .location-container-finca{
     display: flex;
     /* Flexbox para alinear elementos en línea */
     align-items: center;
-    margin-left: 34px;
+    margin-left: 7%;
     width: 134%;
 }
 
@@ -137,7 +137,7 @@ header {
 
 #asistencia {
     text-align: center;
-    padding: 40px 20px;
+    padding: 0px 20px;
 }
 
 #asistencia h1 {
@@ -168,7 +168,7 @@ header {
 }
 
 #asistencia .olivo {
-    margin: -563px 10px -48px -239px;
+    margin: -208% 93% 11% 2%;
     width: 16%;
     rotate: 10deg;
 }
