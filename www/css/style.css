@@ -152,7 +152,7 @@ header {
 
 #asistencia h2 {
     color: #bdc767;
-    margin-top: 32px;
+    /* margin-top: 32px; */
 }
 
 
@@ -419,8 +419,8 @@ button#submit:active {
 img.maletin {
     vertical-align: middle;
     border-style: none;
-    width: 110px;
-    margin: -45px 104px 56px 154px;
+    width: 24%;
+    margin: -6% -38% 9% 37%;
 }
 
 .plain-text {
