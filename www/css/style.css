@@ -172,11 +172,6 @@ header {
     rotate: 10deg;
 }
 
-#asistencia .maletin {
-    margin: 150px 10px -133px -239px;
-    width: 16%;
-    rotate: 10deg;
-}
 
 /* Responsivo */
 @media only screen and (max-width: 600px) {
@@ -418,6 +413,12 @@ button#submit:active {
     text-align: center;
     margin: 10px 30px 10px 30px;
     color: #b3bbad;
+}
+
+#regalos .maletin {
+    margin: 150px 10px -133px -239px;
+    width: 16%;
+    rotate: 10deg;
 }
 
 .plain-text {
