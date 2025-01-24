@@ -166,6 +166,12 @@ header {
     height: 80px;
 }
 
+#asistencia .olivo {
+    margin: -71px 10px -133px -239px;
+    width: 16%;
+    rotate: 10deg;
+}
+
 /* Responsivo */
 @media only screen and (max-width: 600px) {
     .form-container-asist {
