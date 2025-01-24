@@ -415,11 +415,11 @@ button#submit:active {
     color: #b3bbad;
 }
 
-#regalos .maletin {
+ /* {
     margin: 150px 10px -133px -239px;
     width: 16%;
     rotate: 10deg;
-}
+} */
 
 .plain-text {
     background: none;
