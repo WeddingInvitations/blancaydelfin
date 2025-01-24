@@ -167,7 +167,13 @@ header {
 }
 
 #asistencia .olivo {
-    margin: -71px 10px -133px -239px;
+    margin: -650px 10px -133px -239px;
+    width: 16%;
+    rotate: 10deg;
+}
+
+#asistencia .maletin {
+    margin: 150px 10px -133px -239px;
     width: 16%;
     rotate: 10deg;
 }
