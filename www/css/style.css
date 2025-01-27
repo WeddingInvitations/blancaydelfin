@@ -117,8 +117,8 @@ header {
     width: 100%;
 }
 
-.location-container-finca .information-texto img {
-    width: 100%;
+.location-container-finca img.finca {
+    width: 10%;
 }
 
 #general-information .wine {
