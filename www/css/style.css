@@ -40,7 +40,13 @@ header {
     height: 300px;
 }
 
-
+h2 {
+    font-weight: 400;
+    color: #bdc767;
+    margin: -25px 21px 43px 140px;
+    font-family: "The Girl Next Door", serif;
+    letter-spacing: 1px;
+}
 
 /* BIENVENIDOS */
 
