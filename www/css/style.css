@@ -118,7 +118,10 @@ header {
 }
 
 .location-container-finca img.finca {
-    width: 10%;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-left: 30px;
 }
 
 #general-information .wine {
