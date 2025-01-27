@@ -114,7 +114,11 @@ header {
     /* Flexbox para alinear elementos en línea */
     align-items: center;
     margin-left: 7%;
-    width: 134%;
+    width: 100%;
+}
+
+.location-container-finca img {
+    width: 100%;
 }
 
 #general-information .wine {
