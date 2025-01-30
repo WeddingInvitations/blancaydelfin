@@ -3,13 +3,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
 // import { enableLogging } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBIGAgwzGHhOSGyRVa-Ti6WxGSs_Qo2YWg",
-  authDomain: "keen-oasis-445915-f2.firebaseapp.com",
-  projectId: "keen-oasis-445915-f2",
-  storageBucket: "keen-oasis-445915-f2.firebasestorage.app",
-  messagingSenderId: "423457410411",
-  appId: "1:423457410411:web:6bb1ecb7565834455d502e",
-  measurementId: "G-0JLMQTBNBT"
+  apiKey: "AIzaSyCZ3WZC8ikafILAri8d_uQr2fEkNKP9zeY",
+  authDomain: "blancaydelfinwedding.firebaseapp.com",
+  projectId: "blancaydelfinwedding",
+  storageBucket: "blancaydelfinwedding.firebasestorage.app",
+  messagingSenderId: "173716631756",
+  appId: "1:173716631756:web:6175ea9d350ae2e01f5269",
+  measurementId: "G-L2RF7CVFR7"
 };
 
 
