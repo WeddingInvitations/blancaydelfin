@@ -15,7 +15,7 @@ html {
 
 /* Estilos para el texto */
 body.custom-body {
-    background-image: url('images/cenefa_5.png');
+    /* background-image: url('images/cenefa_5.png'); */
     font-family: "Schoolbell", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
