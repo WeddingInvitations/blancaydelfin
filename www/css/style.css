@@ -230,7 +230,9 @@ label {
 }
 
 input[type="text"],
-input[type="tel"] {
+input[type="tel"],
+input[type="cancion"],
+input[type="talla"] {
     width: 100%;
     padding: 8px;
     border: 1px solid #cccccc;
