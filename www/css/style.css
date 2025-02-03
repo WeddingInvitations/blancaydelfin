@@ -103,14 +103,14 @@ header {
     width: 80%;
 }
 
-.location-container-iglesia{
+.location-container-iglesia {
     display: flex;
     align-items: center;
     margin-left: 5%;
     margin-top: -10%;
 }
 
-.location-container-finca{
+.location-container-finca {
     display: flex;
     /* Flexbox para alinear elementos en línea */
     align-items: center;
@@ -187,6 +187,7 @@ header {
     .form-container-asist {
         padding: 20px;
         max-width: 90%;
+
     }
 
     #asistencia h1 {
@@ -212,6 +213,8 @@ header {
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     /* max-width: 450px; */
     margin: 0 auto;
+    position: relative;
+    z-index: 10;
 }
 
 .form-group {
