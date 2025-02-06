@@ -52,9 +52,28 @@ header {
     font-family: "The Girl Next Door", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 60px;
     letter-spacing: 2px;
-    margin: 30px 30px 10px 30px;
+    margin: 135px 30px 10px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    #bienvenidos h1 {
+        color: #bdc767;
+        font-family: "The Girl Next Door", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin: 30px 30px 10px 30px;
+    }
+
+    #bienvenidos img {
+        max-width: 60%;
+        height: auto;
+        border-radius: 45px;
+        box-shadow: 0 4px 40px rgb(0 0 0 / 45%);
+    }
 }
 
 .bienvenidos-texto p {
@@ -68,8 +87,8 @@ header {
     height: auto;
     border-radius: 45px;
     box-shadow: 0 4px 40px rgb(0 0 0 / 45%);
+    /* margin-top: auto; */
 }
-
 
 
 
