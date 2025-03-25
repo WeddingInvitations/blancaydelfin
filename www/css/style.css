@@ -104,9 +104,21 @@ header {
     font-family: "The Girl Next Door", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 70px;
     letter-spacing: 2px;
-    margin: 30px 30px 10px 30px;
+    margin: 215px 30px 10px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    #general-information h1 {
+        color: #bdc767;
+        font-family: "The Girl Next Door", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin: 30px 30px 10px 30px;
+    }
 }
 
 .information-texto p {

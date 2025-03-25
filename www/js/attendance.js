@@ -10,15 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // Seleccionar los elementos después de que el DOM esté cargado
   var checkboxNo = document.getElementById("acompanadoNo");
   var checkboxSi = document.getElementById("acompanadoSi");
-  var busNo = document.getElementById("busNo");
-  var busSi = document.getElementById("busSi");
+  // var busNo = document.getElementById("busNo");
+  // var busSi = document.getElementById("busSi");
   var cancion = document.getElementById("cancion");
 
 
   checkboxSi.addEventListener("change", habilitarCampoAcompanante);
   checkboxNo.addEventListener("change", habilitarCampoAcompanante);
-  busSi.addEventListener("change", habilitarBus);
-  busNo.addEventListener("change", habilitarBus);
+  // busSi.addEventListener("change", habilitarBus);
+  // busNo.addEventListener("change", habilitarBus);
   // adulto.addEventListener("change", habilitarTipo);
   // nino.addEventListener("change", habilitarTipo);
   
@@ -37,14 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function habilitarBus(event) {
-    // Desmarcar el otro checkbox
-    if (busNo.checked && event.target === busSi) {
-      busNo.checked = false;
-    } else if (busSi.checked && event.target === busNo) {
-      busSi.checked = false;
-    }
-  }
+  // function habilitarBus(event) {
+  //   // Desmarcar el otro checkbox
+  //   if (busNo.checked && event.target === busSi) {
+  //     busNo.checked = false;
+  //   } else if (busSi.checked && event.target === busNo) {
+  //     busSi.checked = false;
+  //   }
+  // }
 
   // function habilitarTipo(event) {
   //   // Desmarcar el otro checkbox
@@ -162,7 +162,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   //   type = "Niño";
   // }
 
-  var bus = document.getElementById("busSi").checked;
+  // var bus = document.getElementById("busSi").checked;
   var song = document.getElementById("cancion").value;
   var size = document.getElementById("talla").value;
   
@@ -200,7 +200,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
     Alergias: allergies,
     // Type: type,
     Acompañantes: acompanantes,
-    Bus: bus,
+    // Bus: bus,
     Cancion: song,
     Size: size
   })
@@ -217,7 +217,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
         ale: allergies,
         // type: type,
         gue: acompanantes,
-        bus: bus,
+        // bus: bus,
         song: song,
         size:size
       };
@@ -234,8 +234,8 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   document.getElementById("alergias").value = "";
   document.getElementById("acompanadoSi").checked = "";
   document.getElementById("acompanadoNo").checked = "";
-  document.getElementById("busSi").checked = "";
-  document.getElementById("busNo").checked = "";
+  // document.getElementById("busSi").checked = "";
+  // document.getElementById("busNo").checked = "";
   document.getElementById("cancion").value = "";
   document.getElementById("talla").value = "";
   // document.getElementById("adulto").checked = "";
